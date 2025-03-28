@@ -1,59 +1,95 @@
-# BarberShopUi
+# Descrição do Projeto
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.4.
+O projeto consiste em um desafio proposto pela **Digital Innovation One (DIO)** em parceria com a **Avanade**, com o objetivo de desenvolver um sistema de agendamento para barbearia. A solução foi implementada com base nas orientações e conteúdos ministrados pelo professor **José Luiz Abreu Cardoso Junior** durante o curso.
 
-## Development server
+## Funcionalidades Principais
 
-To start a local development server, run:
+### 1. Gestão de Clientes
+✔ **Cadastro Completo de Clientes**
+- Nome completo
+- Endereço de e-mail válido
+- Contato telefônico
 
-```bash
-ng serve
-```
+✔ **Painel de Gerenciamento**
+- Listagem organizada de todos os clientes cadastrados
+- Funções de edição de informações
+- Opção de remoção de cadastros
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+### 2. Agendamento de Serviços
+✔ **Sistema Completo de Marcação**
+- Seleção de data e hora de início
+- Associação automática ao cliente cadastrado
+- Cálculo e exibição da previsão de término
+- Visualização consolidada de todos os agendamentos
 
-## Code scaffolding
+✔ **Interface Intuitiva**
+- Navegação simplificada
+- Operações rápidas e eficientes
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## Arquitetura do Projeto
 
-```bash
-ng generate component component-name
-```
+🔧 **Estrutura em Camadas Independentes**:
+- **Front-end**: Interface do usuário
+- **Back-end**: Lógica e processamento de dados
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+📁 **Organização dos Repositórios**:
+Os módulos estão separados para melhor manutenção e escalabilidade:
 
-```bash
-ng generate --help
-```
+- [🔗 Link para o Front-end](https://github.com/Joao-Markus-Barbosa/DIO-APP_Full_Stack-Front-end-end-Agendamento_Barbearia.)
+- [🔗 Link para o Back-end](https://github.com/Joao-Markus-Barbosa/DIO-APP_Full_Stack-Back-end-Agendamento_Barbearia.)
+  
+# Funcionamento do Sistema
+![GIF](assets/sistema-funcionando.gif)
 
-## Building
+# Tecnologias Utilizadas
 
-To build the project run:
+## Back-end
+- **Linguagem**: Java
+- **Framework**: SpringBoot
+- **Migração de Banco de Dados**: Flyway
+- **Automação de Build**: Gradle
+- **Virtualização**: Docker
 
-```bash
-ng build
-```
+## Banco de Dados
+- **Sistema de Banco de Dados**: MySQL
+- **Ferramenta de Gerenciamento**: DBeaver
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+## Front-end
+- **Linguagem**: TypeScript
+- **Framework**: Angular
+- **Framework de Estilo**: BootStrap
+- **Linguagem de Marcação**: HTML
+- **Estilização**: CSS
+- **Tema**: Material Theme
 
-## Running unit tests
+# Funcionalidades Técnicas do Projeto
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+## Front-end
+✔ **Consumo de API REST**
+- Comunicação assíncrona com o back-end via HTTP (GET, POST, PUT, DELETE)
+- Tratamento de respostas (sucesso/erro) e exibição amigável ao usuário
 
-```bash
-ng test
-```
+✔ **Componentização**
+- Arquitetura baseada em componentes reutilizáveis (Angular)
+- Separação clara entre lógica (TypeScript), template (HTML) e estilos (CSS)
 
-## Running end-to-end tests
+✔ **Gerenciamento de Estado**
+- Controle de dados compartilhados entre componentes (via serviços ou state management)
 
-For end-to-end (e2e) testing, run:
+## Back-end
+✔ **API RESTful**
+- Endpoints bem definidos seguindo práticas REST (verbos HTTP, status codes adequados)
+- Documentação via Swagger/OpenAPI (se aplicável)
 
-```bash
-ng e2e
-```
+✔ **Persistência de Dados**
+- ORM com JPA/Hibernate para mapeamento objeto-relacional
+- Operações CRUD otimizadas e transacionais
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+✔ **Versionamento do Banco**
+- Controle de mudanças no schema via Flyway (migrations)
+- Garantia de consistência em diferentes ambientes (dev, staging, produção)
 
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## Banco de Dados
+✔ **Armazenamento Confiável**
+- Estrutura relacional com tabelas normalizadas
+- Constraints (PK, FK, unique) para garantir integridade
