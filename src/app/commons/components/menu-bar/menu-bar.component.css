@@ -1,0 +1,41 @@
+.menu {
+  display: flex;
+  gap: 20px;
+  padding: 15px 30px;
+  background: #ffffff;
+  border-radius: 10px;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  width: fit-content;
+  margin: 0 auto; /* Centraliza o bloco na tela */
+}
+
+.menu button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 18px;
+  color: rgb(19, 19, 19);
+  transition: 0.3s;
+}
+
+.menu button:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+mat-icon {
+  color: rgb(13, 13, 13);
+  font-size: 24px;
+}
+
+.menu-title {
+  font-weight: boldui;
+}
+
+mat-menu-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+

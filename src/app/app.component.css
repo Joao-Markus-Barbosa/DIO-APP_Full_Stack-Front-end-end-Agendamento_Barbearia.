@@ -1,0 +1,10 @@
+:root {
+  --cor-texto: #212529;
+  --cor-borda: #ced4da;
+}
+
+body .mat-form-field {
+  /* Força a sobrescrita com seletores mais específicos */
+  --mat-form-field-label-text-color: #6c757d;
+  --mat-input-text-color: var(--cor-texto);
+}

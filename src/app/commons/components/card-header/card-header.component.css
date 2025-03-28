@@ -1,0 +1,62 @@
+/* Definindo variáveis para fontes e cores */
+:root {
+  --primary-font: 'Arial', sans-serif;
+  --secondary-font: 'Helvetica', sans-serif;
+  --primary-color: #4caf50; /* Verde */
+  --secondary-color: #333;  /* Preto */
+  --card-background: #f9f9f9;
+  --header-background: #fff;
+  --border-color: #e0e0e0;
+}
+
+/* Centraliza o título do card */
+.title-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center; /* Garante o alinhamento centralizado do conteúdo */
+}
+
+/* Estilizando o título do card */
+.mat-mdc-card-title {
+  font-family: var(--primary-font);
+  font-size: 2rem;
+  font-weight: boldui;
+  color: var(--primary-color);
+  margin: 0;
+}
+
+/* Estilizando o card com bordas e espaçamentos */
+.card-title {
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+  margin-bottom: 3rem;
+  background-color: var(--card-background);
+  border: 2px solid var(--border-color);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombras para dar um efeito 3D */
+  transition: transform 0.3s ease; /* Adicionando animação */
+}
+
+.card-title:hover {
+  transform: translateY(-5px); /* Efeito de hover para o card */
+}
+
+/* Estilizando o cabeçalho do card */
+mat-card-header {
+  background-color: var(--header-background);
+  padding: 1rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+/* Adicionando um efeito no hover do título */
+mat-card-title {
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+mat-card-title:hover {
+  color: var(--secondary-color);
+}
+
+

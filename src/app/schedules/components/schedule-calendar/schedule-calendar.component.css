@@ -1,0 +1,101 @@
+/* ======= Estilos Gerais ======= */
+body {
+  background-color: #f4f4f4; /* Cor de fundo geral */
+  color: #333; /* Cor padrão do texto */
+  font-family: 'Arial', sans-serif;
+}
+
+/* ======= Containers ======= */
+.container {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 5px 10px rgba(83, 6, 177, 0.1);
+}
+
+/* ======= Campos de Formulário ======= */
+.mat-mdc-form-field {
+  --mdc-filled-text-field-container-color: #f8f9fa !important; /* Cor do fundo do input */
+  --mdc-filled-text-field-active-indicator-color: #6c757d !important; /* Linha inferior do input */
+  --mdc-filled-text-field-focus-active-indicator-color: #9c9d9e !important; /* Linha inferior ao focar */
+}
+
+.mat-mdc-form-field .mdc-floating-label {
+  color: #0a539c !important;
+  font-size: 14px !important;
+  font-weight: bold !important;
+}
+
+.mat-mdc-input-element {
+  color: #212529 !important;
+  font-size: 16px !important;
+}
+
+.mat-mdc-select-value {
+  color: #212529 !important;
+}
+
+/* ======= Botões ======= */
+button.mat-mini-fab {
+  background-color: #673ab7 !important; /* Roxo Material */
+  color: rgb(177, 0, 0) !important;
+}
+
+button.mat-mini-fab[color="warn"] {
+  background-color: #d32f2f !important; /* Vermelho para ações de exclusão */
+}
+
+/* ======= Timepicker ======= */
+.mat-timepicker-toggle {
+  color: #007bff !important;
+}
+
+/* ======= Calendário ======= */
+.mat-calendar {
+  background-color: #000000 !important;
+  border-radius: 8px !important;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+/* ======= Ajuste de Cores da Tabela ======= */
+.mat-mdc-table {
+  background-color: transparent !important;
+}
+
+.mat-mdc-header-row {
+  background-color: #6c757d !important;
+  color: rgb(53, 53, 53) !important;
+  text-transform: uppercase !important;
+  font-weight: boldui !important;
+}
+
+.mat-mdc-row {
+  background-color: #ffffff !important;
+}
+
+.mat-mdc-cell {
+  color: #212529 !important; /* Cor escura para o texto */
+  font-size: 16px !important;
+  font-weight: boldui !important;
+}
+
+/* Para garantir que os textos dentro das células não fiquem transparentes ou opacos */
+.mat-mdc-cell span {
+  color: #7c7c7c !important;
+  opacity: 1 !important;
+}
+
+
+/* ======= Paginador ======= */
+.mat-mdc-paginator {
+  background-color: #2b2a2a !important;
+  border: 1px solid #494949 !important;
+  border-radius: 8px !important;
+}
+
+
+/*
+ * {
+  border: 1px solid red !important;
+} */
